@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Card</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-card {
+            background-color: #ffffff;
+            width: 340px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        .profile-card h2 {
+            margin-bottom: 15px;
+            color: #1e3c72;
+        }
+
+        .profile-card p {
+            margin: 10px 0;
+            color: #444;
+            font-size: 15px;
+        }
+
+        .profile-card span {
+            font-weight: bold;
+            color: #000;
+        }
+        .qr-section {
+            background-color: #ffffff;
+            padding: 25px;
+            text-align: center;
+            border-top: 3px solid #1e3c72;
+        }
+
+        .qr-box {
+            width: 130px;
+            height: 130px;
+            border: 2px dashed #1e3c72;
+            margin: 12px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1e3c72;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="profile-card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/032/176/191/small/business-avatar-profile-black-icon-man-of-user-symbol-in-trendy-flat-style-isolated-on-male-profile-people-diverse-face-for-social-network-or-web-vector.jpg" alt="Profile Picture">
+           
+            <h2>Anish Pudasaini</h2>
+            <p><span>Address:</span> Kathmandu, Nepal</p>
+            <p><span>Contact:</span> 98609127XX</p>
+            <p><span>Email:</span> anish.pudasaini@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="qr-section">
+        <h3>QR Code</h3>
+        <div class="qr-box">
+            PLACE QR HERE
+        </div>
+        <p>Scan to view profile details</p>
+    </div>
+
+</body>
+</html>
