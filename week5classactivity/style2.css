@@ -1,0 +1,67 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows:
+    1fr
+    1fr
+    3fr
+    3fr
+    1fr;
+
+  grid-template-areas:
+    "logo header header header header header"
+    "banner banner banner banner banner banner"
+    "nav content content content content ads"
+    "nav content content content content ads"
+    "footer footer footer footer footer footer";
+
+  gap: 20px;
+  background-color: #f5f5f5; /* professional light background */
+  padding: 10px;
+}
+
+/* Common styling */
+.container div {
+  padding: 20px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+/* Grid areas */
+.logo {
+  grid-area: logo;
+  background-color: #1f2937; /* dark gray */
+}
+
+.header {
+  grid-area: header;
+  background-color: #0f172a; /* navy blue */
+}
+
+.banner {
+  grid-area: banner;
+  background-color: #2563eb; /* professional blue */
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #475569; /* slate */
+}
+
+.content {
+  grid-area: content;
+  background-color: #192896;
+  color: #ca1c1c;
+}
+
+.ads {
+  grid-area: ads;
+  background-color: #64748b; /* steel */
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #020617; /* charcoal */
+}
