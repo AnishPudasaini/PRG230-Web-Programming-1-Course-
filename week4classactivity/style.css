@@ -1,0 +1,40 @@
+/* Gallery Layout */
+.gallary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Images */
+.gallary item {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Images */
+.item img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Mobile: 1 image */
+@media (max-width: 600px) {
+  .item {
+    flex: 0 0 100%;
+  }
+}
+
+/* Tablet: 2 images */
+@media (max-width: 900px) {
+  .item {
+    flex: 0 0 50%;
+  }
+}
+
+/* Desktop: 4 images */
+@media (min-width: 901px) {
+  .item {
+    flex: 0 0 25%;
+  }
+}

@@ -16,11 +16,11 @@
     "footer footer footer footer footer footer";
 
   gap: 20px;
-  background-color: #f5f5f5; /* professional light background */
+  background-color: #f5f5f5; 
   padding: 10px;
 }
 
-/* Common styling */
+
 .container div {
   padding: 20px;
   font-size: 22px;
@@ -29,25 +29,25 @@
   color: #ffffff;
 }
 
-/* Grid areas */
+
 .logo {
   grid-area: logo;
-  background-color: #1f2937; /* dark gray */
+  background-color: #1f2937; 
 }
 
 .header {
   grid-area: header;
-  background-color: #0f172a; /* navy blue */
+  background-color: #0f172a; 
 }
 
 .banner {
   grid-area: banner;
-  background-color: #2563eb; /* professional blue */
+  background-color: #2563eb; 
 }
 
 .nav {
   grid-area: nav;
-  background-color: #475569; /* slate */
+  background-color: #475569; 
 }
 
 .content {
@@ -58,10 +58,10 @@
 
 .ads {
   grid-area: ads;
-  background-color: #64748b; /* steel */
+  background-color: #64748b; 
 }
 
 .footer {
   grid-area: footer;
-  background-color: #020617; /* charcoal */
+  background-color: #020617; 
 }
