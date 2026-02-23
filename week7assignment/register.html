@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - SmartPhone Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-container">
+    <h2>Register</h2>
+
+    <form id="registerForm">
+        <input type="text" id="regName" placeholder="Full Name" required>
+        <input type="email" id="regEmail" placeholder="Email" required>
+        <input type="password" id="regPassword" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account? <a href="index.html">Login</a></p>
+</div>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let email = document.getElementById("regEmail").value;
+    let password = document.getElementById("regPassword").value;
+
+    localStorage.setItem("userEmail", email);
+    localStorage.setItem("userPassword", password);
+
+    alert("Registration Successful! Please Login.");
+    window.location.href = "index.html";
+});
+</script>
+
+</body>
+</html>
